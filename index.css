@@ -1,0 +1,191 @@
+body{
+    background-color: rgb(241 245 249);
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 680px) {
+    #container{
+        display: none;
+    }
+    
+
+    #mobile-screen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 680px) {
+    #container{
+        display: flex;
+    }
+
+    #mobile-screen{
+        display: none;
+    }
+}
+
+
+#header{
+    background-color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#header .logo{
+    position: absolute;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+#header .btn-follow{
+    position: absolute; 
+    right: 50px;
+    border: black 2px solid;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+#header .btn-follow:hover{
+    background-color: black;
+    color: white;
+}
+
+#container{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.card{
+    margin: 25px;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card-account{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.card-date{
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    font-family: monospace;
+    color: gray;
+}
+
+.card-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card-tweet{
+    line-height: 24px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.card-tweet img{
+    width: 20px;
+    height: 20px;
+}
+
+.card-tweet .r-qvutc0{
+    word-wrap: break-word;
+}
+
+.card-tweet .r-bcqeeo{
+    min-width: 0px;
+}
+
+.card-tweet .r-xoduu5{
+    display: inline-flex;
+}
+
+.card-tweet .r-4qtqp9{
+    display: inline-block;
+}
+
+.card-tweet .r-10akycc{
+    vertical-align: -20%;
+}
+
+
+.card-footer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.card-footer .btn{
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-footer .btn-go{
+    background-color: #1da1f2;
+}
+
+.btn-trash{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #d11a2a;
+    color: white;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

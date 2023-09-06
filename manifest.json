@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "XHistory",
+    "version": "1.0.0",
+
+    "description": "You can now navigate through the last tweet that you have seen",
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "permissions": [
+        "storage",
+        "tabs",
+        "scripting"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["https://twitter.com/*", "https://x.com/*"],
+            "js": ["jquery.min.js", "content_scripts/index.js"]
+        }
+    ],
+
+    "action": {
+        "default_title": "XHistory",
+        "default_icon": "icon/xhistory-icon.png"
+    },
+
+    "icons":{
+        "16": "icon/xhistory-icon.png",
+        "32": "icon/xhistory-icon.png",
+        "48": "icon/xhistory-icon.png",
+        "128": "icon/xhistory-icon.png"
+    }
+}
